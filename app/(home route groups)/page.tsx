@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import { resolve } from "path";
 import { useEffect, useState } from "react";
 import Link from 'next/link';
+import Movie from "../../components/movie";
+import styles from '../../styles/home.module.css';
 
 // 클라이언트 컴포넌트에서는 metadata export불가능
 export const metadata: Metadata = {
@@ -40,12 +42,9 @@ export default async function HomePage() {
     // 기본
     const movies = await getMovies();
     return (
-        <div>
+        <div className={styles.container}>
             {movies.map((movie) =>
-                <li key={movie.id}>
-                    <Link href={`/movies/${movie.id}`}>{movie.title}
-                    </Link>
-                </li>
+            <Movie key={movie.id} id={movie.id} title={movie.title} poster_path={movie.poster_path} />
                 )}
             {/* {JSON.stringify(movies)} */}
         </div>

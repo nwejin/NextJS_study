@@ -1,5 +1,6 @@
 import Navigation from "../components/navigation";
 import { Metadata } from "next"; // 타입스크립트 사용 시
+import "../styles/global.css"
 
 export const metadata: Metadata = {
   title: {

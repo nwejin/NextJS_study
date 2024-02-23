@@ -2,11 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import styles from "../styles/navigation.module.css"
+
+
 export default function Navigation() {
     const path = usePathname(); // 현재 어떤 path(경로)에 있는지 알려주는 usePathname
     console.log(path)
     return (
-        <nav>
+        <nav className={styles.nav}>
             <ul>
                 <li>
                     <Link href="/">Home</Link> {path === "/" ? " 🔥" : ""}

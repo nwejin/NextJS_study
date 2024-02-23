@@ -1,0 +1,14 @@
+.container {
+ 
+  width: fit-content;
+  /* width: 50%; */
+}
+
+.container img {
+    width: 50px;
+    height: auto;
+}
+
+.container p {
+    font-size: 0.7rem;
+}
