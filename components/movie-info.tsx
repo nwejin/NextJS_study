@@ -1,4 +1,4 @@
-import {API_URL} from '../app/(home route groups)/page';
+import {API_URL} from '../app/(home)/page';
 import styles from '../styles/movie.info.module.css';
 import MovieProduction from './movie-production';
 import Link from 'next/link';
