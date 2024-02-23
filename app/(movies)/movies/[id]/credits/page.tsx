@@ -1,5 +1,4 @@
-export default function Credits({id}:{id: string}) {
-    console.log("credit > ", id)
+export default function Credits() {
     return (
         <div></div>
     )

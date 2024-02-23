@@ -5,13 +5,14 @@ import { useEffect, useState } from "react";
 import Link from 'next/link';
 import Movie from "../../components/movie";
 import styles from '../../styles/home.module.css';
+import {API_URL} from '../constants';
 
 // 클라이언트 컴포넌트에서는 metadata export불가능
 export const metadata: Metadata = {
   title: 'Home',
 }
 
-export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
+
 
 // ssr fetch방법
 async function getMovies() {
